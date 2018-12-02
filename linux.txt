@@ -16,7 +16,11 @@ file soft management
 ~/ws/github/doc-01/
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-/usr/java/: jdk-1.8.0_161, eclipse-luna-sr2, tomcat-7.0.84, maven-3.6.0, nginx-1.12.2
+which javac
+whereis javac
+
+/usr/java/: jdk-1.8.0_161, eclipse-luna-sr2, tomcat-7.0.84, maven-3.6.0
+/usr/nginx/: nginx-1.12.2
 /usr/local/: nginx-1.12.2, firefox-63.0.3
 /usr/share/: 
 
