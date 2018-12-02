@@ -1,0 +1,30 @@
+
+file soft management
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~/13/book/
+~/13/soft-ubuntu1404/
+
+~/code/java/
+~/code/python/
+
+~/mysite/www/
+
+~/src/nginx-1.12.2/
+
+~/ws/eclipse/0/
+~/ws/maven/repository/
+~/ws/github/doc-01/
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/usr/java/: jdk-1.8.0_161, eclipse-luna-sr2, tomcat-7.0.84, maven-3.6.0, nginx-1.12.2
+/usr/local/: nginx-1.12.2, firefox-63.0.3
+/usr/share/: 
+
+other: chrome-49, git-1.9.1
+
+===============================================================================
+ln -s /usr/local/firefox/firefox firefox
+
+sudo ./sbin/nginx
+sudo ./sbin/nginx -s reload
+

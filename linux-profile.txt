@@ -1,0 +1,13 @@
+
+vim /etc/profile
+# jdk8 lhl 2018-11-26
+export JAVA_HOME=/usr/java/jdk1.8.0_161
+export PATH=$JAVA_HOME/bin:$PATH
+# maven3.6 lhl 2018-11-26
+export MAVEN_HOME=/usr/java/apache-maven-3.6.0
+export M2_HOME=$MAVEN_HOME
+export PATH=$MAVEN_HOME/bin:$PATH
+
+vim ~/.bashrc
+source /etc/profile
+
