@@ -1,0 +1,72 @@
+
+安装
+ubuntu 14.04 lts 
+mysql 5.5
+
+sudo apt-get install mysql-server mysql-client
+y
+ro12ot34
+
+安装成功后会自动运行
+
+ps -ef | grep mysql
+
+which mysqld
+which mysql
+
+sudo /etc/init.d/mysql status
+sudo service mysql status
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+https://www.cnblogs.com/yucaikang/p/8830436.html
+安装图形客户端
+sudo apt-get install mysql-workbench
+y
+===============================================================================
+修改默认字符集
+sudo vim /etc/mysql/my.cnf
+在[mysqld]下面添加
+character-set-server = utf8
+保存, 重启即可
+sudo service mysql restart
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+本地登录 mysql -uroot -pro12ot34
+使用下面的2条语句验证
+show variables like '%char%';
+show variables like '%colla%';
+===============================================================================
+配置远程登录
+
+sudo vim /etc/mysql/my.cnf
+把其中bind-address = 127.0.0.1注释了
+# bind-address = 127.0.0.1
+保存, 重启
+sudo service mysql restart
+
+本地登录 mysql -uroot -pro12ot34
+执行下面2条语句即可
+grant all on *.* to root@'%' identified by 'ro12ot34';
+flush privileges;
+exit;
+
+mysql -uroot -pro12ot34 -h192.168.0.119 -P3306
+就可以使用root远程登录了
+===============================================================================
+create database test;
+
+use test;
+
+create table demo(
+id int,
+`name` varchar(20)
+);
+
+insert into demo(id, `name`)
+values (1,'a');
+insert into demo(id, `name`)
+values (1,'我的');
+
+select * from demo;
+
+show create database test;
+show create table demo;
+
