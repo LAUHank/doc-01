@@ -1,4 +1,25 @@
 
+git config --global user.name "lhl"
+git config --global user.email "lhl@lhl.com"
+git config --global http.sslVerify false
+
+vim ~/.gitconfig
+===============================================================================
+git clone https://github.com/LAUHank/doc-01.git
+cd doc-01
+
+git status
+
+git add *
+git add .gitignore
+git rm memo.txt
+
+git commit -m 'first commit'
+
+git push -u origin master
+
+git pull origin master
+===============================================================================
 vim .gitignore
 # maven
 target/
