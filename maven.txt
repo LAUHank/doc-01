@@ -1,5 +1,5 @@
 
-# settings.xml
+vim ~/.m2/settings.xml
 
     <localRepository>${user.home}/.m2/repository</localRepository>
     <localRepository>/home/lhl/ws/maven/repository</localRepository>
@@ -11,7 +11,7 @@
         <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
     </mirror>
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# pom.xml
+vim pom.xml
 
  <repositories>  
     <repository>  
